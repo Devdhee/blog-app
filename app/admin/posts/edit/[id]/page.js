@@ -56,11 +56,7 @@ export default function EditPost({ params }) {
       <div className="w-full max-w-2xl py-3 mx-auto">
         <div className="px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20">
           <div className="max-w-xl mx-auto">
-            <div>
-              <h1 className="text-2xl font-semibold text-stone-600">
-                Edit Post
-              </h1>
-            </div>
+            <h1 className="text-2xl font-semibold text-stone-600">Edit Post</h1>
             <div className="divide-y divide-gray-200">
               <form
                 onSubmit={handleSubmit}
