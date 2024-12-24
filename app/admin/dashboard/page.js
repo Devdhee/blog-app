@@ -1,11 +1,11 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useAuth } from "../../../contexts/AuthContext";
-import { db } from "../../../lib/firebase";
 import { collection, getDocs, deleteDoc, doc } from "firebase/firestore";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { db } from "@/lib/firebase";
+import { useAuth } from "@/contexts/AuthContext";
 
 export default function AdminDashboard() {
   const [posts, setPosts] = useState([]);

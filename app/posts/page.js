@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { db } from "../lib/firebase";
 import { collection, getDocs, query, orderBy, limit } from "firebase/firestore";
+import { db } from "@/lib/firebase";
 
 async function getPosts() {
   const postsCollection = collection(db, "posts");

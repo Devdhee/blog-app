@@ -1,10 +1,10 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useAuth } from "../../../../contexts/AuthContext";
-import { db } from "../../../../lib/firebase";
 import { collection, addDoc, doc, getDoc, updateDoc } from "firebase/firestore";
 import { useRouter } from "next/navigation";
+import { useAuth } from "@/contexts/AuthContext";
+import { db } from "@/lib/firebase";
 
 export default function PostEditor({ params }) {
   const [title, setTitle] = useState("");
